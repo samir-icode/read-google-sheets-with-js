@@ -4,7 +4,6 @@
 //Published file goes here in csv format.
     $.ajax("url_goes_here").done(
         function(result){
-            var data = [];
                 var rows = result.split("\n");
                 for (var i = 0; i < rows.length; i++) {
                     var cells = rows[i].split(",");
